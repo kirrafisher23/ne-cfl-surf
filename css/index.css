@@ -1,0 +1,148 @@
+body {
+  background-image: url('../images/coolfunHOMEPAGE.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ nav {
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+    
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: coral;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 200px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
+.Center {
+  margin: 25px auto 0;
+  width: 95vw;                  /* always within the viewport */
+  max-width: 800px;             /* cap for larger screens */
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.Center td {
+  padding: 8px 10px;
+  border: none;
+  color: black;
+  word-break: break-word;
+}
+
+.Center a {
+  display: block;
+  text-decoration: none;
+  color: blanchedalmond;
+  font-size: clamp(13px, 2.6vw, 18px);
+  line-height: 1.25;
+}
+
+.Center tr td a:hover {
+    color: coral;
+  }
+
+@media (max-width: 600px) {
+  .Center {
+    width: 100%;              /* edge to edge on small screens */
+    border-spacing: 0 8px;    /* tighter row spacing */
+  }
+
+  .Center td {
+    padding: 4px 4px;         /* reduce padding */
+  }
+
+  .Center a {
+    font-size: 14px;          /* lock readable size */
+  }
+}
+
+.box {
+  background-color: rgba(140, 210, 159, 0.7);
+  padding: 0px 20px;       
+  margin: 20px auto;        
+  border-radius: 50px 25px; 
+  
+  width: 90%;               
+  max-width: 1100px;       
+  box-sizing: border-box;   
+}
+
+@media (max-width: 500px) {
+  .box {
+    width: 95%;
+  }
+}
