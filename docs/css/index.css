@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/coolfunHOMEPAGE.gif');
+  background-image: url('/ne-cfl-surf/images/coolfunHOMEPAGE.gif'); /* absolute path on GitHub Pages */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
