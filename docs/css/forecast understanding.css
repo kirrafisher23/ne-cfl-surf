@@ -91,37 +91,34 @@ h2{
     
 }
 
-.windUnderstanding{
-    width: 60%;            /* Limits the width to 60% of the screen (adjust as needed) */
-    text-align: left;      /* Aligns the text to the left inside the container */
-    padding: 25px;         /* Adds padding around the text */
-    line-height: 1.4;
-    
+h5{
+    text-align: center;
 }
 
-.swellPeriod{
-    text-align: right;
-    width: 60%;                 
-    padding: 10px;         
-    line-height: 1.4;
-    margin-left: 35%;
-    
+.bigassparagraph{
+  text-align: center;
 }
 
-.waveHeight{
-    width: 60%;            /* Limits the width to 60% of the screen (adjust as needed) */
-    text-align: left;      /* Aligns the text to the left inside the container */
-    padding: 25px;         /* Adds padding around the text */
-    line-height: 1.4;
-    
+/* container for the two widgets */
+.reports{
+  display:flex;
+  justify-content:center;   /* center the pair */
+  flex-wrap:wrap;           /* wrap on small screens */
+  gap:24px;                 /* space between them */
+  margin:30px auto;
+  width:90%;
 }
 
-.tides{
-    text-align: right;
-    width: 60%;                 
-    padding: 10px;         
-    line-height: 1.4;
-    margin-left: 35%;
-    
-    
+/* each widget box (your #sc-widget-788 / #sc-widget-789) */
+.reports > div{
+  box-sizing:border-box;
+  width:100%;
+  max-width:400px;          /* <= force vertical layout inside the widget */
+  flex:0 0 400px;           /* keep them lined up */
+}
+
+/* if the widget injects an <iframe>, make it obey the cap */
+.reports iframe{
+  width:100% !important;
+  max-width:400px !important;
 }
